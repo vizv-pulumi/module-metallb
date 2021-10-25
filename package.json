@@ -1,0 +1,22 @@
+{
+  "name": "@vizv/module-metallb",
+  "devDependencies": {
+    "@types/node": "^10.0.0"
+  },
+  "dependencies": {
+    "@pulumi/kubernetes": "^3.0.0",
+    "@pulumi/pulumi": "^3.0.0"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "tsc",
+    "prepack": "npm run build",
+    "postpack": "rm -rf dist"
+  },
+  "types": "./dist/index.d.ts",
+  "version": "1.0.0"
+}
