@@ -14,7 +14,7 @@ export class Metallb extends pulumi.ComponentResource {
     args: MetallbArgs,
     opts?: pulumi.ComponentResourceOptions,
   ) {
-    super('vizv:foundation:Metallb', name, {}, opts)
+    super('vizv:module:Metallb', name, {}, opts)
 
     this.chart = new k8s.helm.v3.Chart(
       name,
